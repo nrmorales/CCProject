@@ -6,6 +6,118 @@
 	
         <title>CC</title>
 	
+	
+        <style>
+			html, body {
+				margin: 0 auto;
+				padding: 0;
+				text-align: center;
+			}
+			
+			#authenticatorLoginFormWrapper {
+				border: 2px solid #989898;
+				border-radius: 4px;
+				-moz-box-shadow: 0 0 4px 4px #ccc;
+				-webkit-box-shadow: 0 0 4px 4px #ccc;
+				box-shadow: 0 0 4px 4px #ccc;
+				display: inline-block;
+				margin: 0px 0 0;
+				padding: 0px 0px;
+				text-align: left;
+				width: 265px;
+			}
+			
+			#authenticatorLoginFormWrapper h1 {
+				background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAeCAMAAABqtKLHAAAAAXNSR0IArs4c6QAAAKhQTFRF////mJiY8PDw6OjoqKioyMjI4ODgAAAAwMDAuLi4YGBgMDAwcHBwoKCgaGhoAFiIAHioCEhwAGiYAGCQAHCgAGCYAICwAIC4AIi4QEBA2NjYAFiAAHiwAGCI0NDQgICAWFhYSEhIkJCQADBIeHh4ADhQADBAODg4EFBwAGiQCFB4GFh4cJCosLCwCFBwEFB4ICAgIFiAOGB4QGB4WICQYICYeJiweKCwSqN4OwAAANVJREFUSMfdlk0OhCAMhd+CBDhCN7Nqwsr7X2+UP6FgxiFs4BkTbOUZP4sUuhYgAkSs4FUGkUTV3Kxfrt5EyTvjg6B033UlvSFwikUiIDi0Hud6yokE+8msN+BaUJABlG8peXENYJKrq5cA1tYDgaaQUoICAsrjf7i2pjERUB/FeHuugkBRqIxxruJr3ZXqgJ25Pq7YvFgJwLT/QI4yluZqrX2/w1CZSGC4rkJvGs6R3TB1AqpxtTAf662nvj8uAGa+qz9GOqLYDCkMc+11b/G6GzYXgi/6uhyAhaXJ7gAAAABJRU5ErkJggg%3D%3D');
+				height:30px;
+				margin: 0;
+				overflow: hidden;
+				padding: 0;
+				text-indent: 100%;
+				white-space: nowrap;
+				width: 85px;
+			}
+			
+			#authenticatorLoginFormWrapper h2 {
+				color: #303030;
+				font-family: arial,helvetica,sans-serif;
+				font-size: 17px;
+				font-weight: normal;
+				margin: 0;
+				padding: 0px 0 0;
+			}
+			
+			#authenticatorLoginFormWrapper form {
+				padding: 20px 0 0;
+			}
+			
+			#authenticatorLoginFormWrapper form label {
+				font-family: ariel,helvetica,sans-serif;
+				font-size: 14px;
+				font-weight: normal;
+				margin: 0;
+				padding: 0px 0 0;
+			}
+			
+			#authenticatorLoginFormWrapper form input {
+				border: 1px solid #ccc;
+				color: #707070;
+				font-family: arial, helvetica, sans-serif;
+				font-size: 14px;
+				font-weight: normal;
+				margin: 1px 0;
+				padding: 5px;
+				width: 250px;
+			}
+			
+			#authenticatorLoginFormWrapper form input#login {
+				background: -moz-linear-gradient(center top, #0088b8 5%, #005880 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0088b8), color-stop(1, #005880));
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088b8', endColorstr='#005880');
+				background-color: #0088b8;
+				border: 1px solid #084870;
+				-moz-border-radius: 6px;
+				-webkit-border-radius: 6px;
+				border-radius: 4px;
+				color: #fff;
+				display: inline-block;
+				font-family: arial, helvetica, sans-serif;
+				font-size: 12px;
+				font-weight: bold;
+				margin: 24px 0 0 0;
+				padding: 4px 012px;
+				text-shadow: 1px 1px 0px #528ecc;
+				width: auto;
+			}
+			
+			#authenticatorLoginFormWrapper form input#login:hover {
+				background: -moz-linear-gradient(center top, #005880 5%, #0088b8 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #005880), color-stop(1, #0088b8));
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#005880', endColorstr='#0088b8');
+				background-color: #005880;
+			}
+			
+			#authenticatorLoginFormWrapper form input#login:active {
+				position: relative;
+				top: 1px;
+			}
+			
+			#authenticatorLoginFormWrapper #copyright {
+				border-top: 1px solid #c8c8c8;
+				color: #606060;
+				font-family: arial, helvetica, sans-serif;
+				font-size: 11px;
+				margin: 30px 0;
+				padding: 18px 0 0;
+			}
+			
+			#authenticatorLoginFormWrapper #copyright a {
+				color: #006098;
+				text-decoration: none;
+			}
+		</style>
+	
+	
         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
 	
         <link href="wlclient/css/wlclient.css" rel="stylesheet">
@@ -65,21 +177,30 @@
     <body id="content" style="display: none;">
 	<!--application UI goes here-->
 	
-        <img alt="axeia_logo" border="0" height="100%" src="logo__axeia_group_of_compaies.jpg" width="100%">
-	<div>
-            <form>
-			
-                <label for="username">User name</label><input name="username" type="text">
+        <div id="authenticatorLoginFormWrapper">
+	
+            <img alt="axeia_logo" border="0" height="100%" src="logo__axeia_group_of_compaies.jpg" width="100%">
+	<h2>Credit Investigation and Collection</h2>
+	
+            <form action="j_security_check" method="post">
+				
+                <label for="j_username">User name:</label>
+				<input id="j_username" name="j_username" placeholder="User name" type="text">
+				
                 <br>
+                <br>
+				
+                <label for="j_password">Password:</label>
+				<input id="j_password" name="j_password" placeholder="Password" type="password">
+				
+                <br>
+				
+                <input id="login" name="login" type="submit" value="Log In">
 			
-                <label for="password">Password</label><input name="password" type="password">
-			
-                <p>
-                    <input type="submit" value="Login">
-                </p>
             </form>
 	
         </div>
+	
 	
         <script src="js/initOptions.js"></script>
 	<script src="js/CC.js"></script>
